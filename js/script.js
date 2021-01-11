@@ -27,7 +27,7 @@ var ExcelToJSON = function() {
   };
 };
 
-function zamena() {
+function replacement() {
 
   //замена артикула
   let listArt = [
