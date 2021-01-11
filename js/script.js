@@ -258,7 +258,7 @@ function replacement() {
     }
   }
 
-  for (let i = 1; i < kelmePrice.length; i++) {
+  for (let i = 0; i < kelmePrice.length; i++) {
     kelmePrice[i].art = `${kelmePrice[i].art}-${kelmePrice[i].color}`;
     delete kelmePrice[i].color;
     if (kelmePrice[i].size === undefined) delete  kelmePrice[i];
