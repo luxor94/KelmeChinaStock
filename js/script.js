@@ -67,11 +67,8 @@ function replacement() {
 
 
   for (let i = 0; i < kelmePrice.length; i++) {
-    if (listArt.includes(kelmePrice[i].art)) {
-      kelmePrice[i].art = kelmePrice[i].art.slice(0, -4);
-      continue
-    }
-
+    if (listArt.includes(kelmePrice[i].art)) kelmePrice[i].art = kelmePrice[i].art.slice(0, -4);
+      
   }
 
 
@@ -210,8 +207,9 @@ function replacement() {
     "8101WZ5001",
     "8101WZ5003",
     "9996568",
-
-
+    "8101WZ5001",
+    "8101WZ5002",
+    "8101WZ5003",
   ]
 
   //список артикулов с размеров гетр M
@@ -234,7 +232,9 @@ function replacement() {
 
   //список артикулов с размеров гетр 8
   let listSocks8 = ["K15Z931",
-    "9993574",]
+    "9993574",
+    "8101WZ3001",
+   ]
 
 
 
