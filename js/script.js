@@ -68,7 +68,7 @@ function replacement() {
 
   for (let i = 0; i < kelmePrice.length; i++) {
     if (listArt.includes(kelmePrice[i].art)) {
-      kelmePrice[i].art = kelmePrice[1].art.slice(0, -4);
+      kelmePrice[i].art = kelmePrice[i].art.slice(0, -4);
       continue
     }
 
