@@ -175,6 +175,13 @@ function replacement() {
     }
     if (kelmePrice[i].size == '8XL' && !listArtSize.includes(kelmePrice[i].art)) {
       kelmePrice[i].size = "7XL";
+      
+          if (kelmePrice[i].size == '9XL' && !listArtSize.includes(kelmePrice[i].art)) {
+      kelmePrice[i].size = "8XL";
+    }
+          if (kelmePrice[i].size == '10XL' && !listArtSize.includes(kelmePrice[i].art)) {
+      kelmePrice[i].size = "9XL";
+    }
     }
     if (kelmePrice[i].size == 'Free Size' && !listArtSize.includes(kelmePrice[i].art)) {
       kelmePrice[i].size = "UNI";
