@@ -268,6 +268,14 @@ function replacement() {
 
 
   ]
+  
+    //список артикулов с размером мячей 5
+  let listSocks5 = [
+    "9096148",
+
+
+  ]
+
 
 
   for (let i = 0; i < kelmePrice.length; i++) {
@@ -282,6 +290,9 @@ function replacement() {
     }
     if (kelmePrice[i].size == 'UNI' && listSocks6.includes(kelmePrice[i].art)) {
       kelmePrice[i].size = "6";
+    }
+    if (kelmePrice[i].size == 'UNI' && listSocks5.includes(kelmePrice[i].art)) {
+      kelmePrice[i].size = "5";
     }
   }
 
